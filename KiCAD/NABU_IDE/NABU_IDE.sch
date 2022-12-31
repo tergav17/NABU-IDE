@@ -186,8 +186,6 @@ F 3 "~" H 1700 2750 50  0001 C CNN
 	1    1700 2750
 	-1   0    0    -1  
 $EndComp
-Text Notes 950  1200 0    150  ~ 0
-NABU EXPANSION\n\n
 Text Label 1950 1350 0    50   ~ 0
 *NABU_INT
 Text Label 1950 1750 0    50   ~ 0
@@ -1131,7 +1129,7 @@ U 1 1 63B245B7
 P 1700 5950
 F 0 "J3" H 1592 7535 50  0000 C CNN
 F 1 "NABU Daisy Chain In" H 1592 7444 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Horizontal" H 1700 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x30_P2.54mm_Vertical" H 1700 5950 50  0001 C CNN
 F 3 "~" H 1700 5950 50  0001 C CNN
 	1    1700 5950
 	-1   0    0    -1  
@@ -1257,7 +1255,7 @@ U 1 1 63FFF128
 P 850 5950
 F 0 "J4" H 742 7535 50  0000 C CNN
 F 1 "NABU Daisy Chain Out" H 742 7444 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Horizontal" H 850 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x30_P2.54mm_Vertical" H 850 5950 50  0001 C CNN
 F 3 "~" H 850 5950 50  0001 C CNN
 	1    850  5950
 	-1   0    0    -1  
@@ -1449,10 +1447,10 @@ Wire Wire Line
 Wire Wire Line
 	5800 7600 5850 7600
 $Comp
-L Device:R R?
+L Device:R R10
 U 1 1 643670CF
 P 5650 7400
-F 0 "R?" V 5443 7400 50  0000 C CNN
+F 0 "R10" V 5443 7400 50  0000 C CNN
 F 1 "10K" V 5534 7400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5580 7400 50  0001 C CNN
 F 3 "~" H 5650 7400 50  0001 C CNN
@@ -1462,10 +1460,10 @@ $EndComp
 Text Label 5500 7400 2    50   ~ 0
 +5V
 $Comp
-L Device:R R?
+L Device:R R11
 U 1 1 643670D6
 P 5650 7600
-F 0 "R?" V 5750 7600 50  0000 C CNN
+F 0 "R11" V 5750 7600 50  0000 C CNN
 F 1 "10K" V 5534 7600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5580 7600 50  0001 C CNN
 F 3 "~" H 5650 7600 50  0001 C CNN
@@ -1682,23 +1680,36 @@ Text Label 5800 4950 2    50   ~ 0
 GND
 Text Label 5800 6100 2    50   ~ 0
 GND
+Text Notes 950  1200 0    150  ~ 0
+NABU EXPANSION\n\n
 $Comp
-L Connector:Conn_01x02_Male J5
-U 1 1 647790E4
-P 800 1350
-F 0 "J5" H 908 1531 50  0000 C CNN
-F 1 "NABU External Power" H 908 1440 50  0000 C CNN
-F 2 "" H 800 1350 50  0001 C CNN
-F 3 "~" H 800 1350 50  0001 C CNN
-	1    800  1350
+L Connector:Conn_01x05_Male J5
+U 1 1 648990B2
+P 800 1550
+F 0 "J5" H 908 1931 50  0000 C CNN
+F 1 "NABU External Power" H 908 1840 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical" H 800 1550 50  0001 C CNN
+F 3 "~" H 800 1550 50  0001 C CNN
+	1    800  1550
 	1    0    0    -1  
 $EndComp
-Text Label 1050 1350 0    50   ~ 0
-+5V
-Text Label 1050 1450 0    50   ~ 0
+Text Label 1050 1400 0    50   ~ 0
 GND
+Text Label 1050 1700 0    50   ~ 0
++5V
 Wire Wire Line
-	1050 1450 1000 1450
+	1000 1650 1050 1650
+Wire Wire Line
+	1000 1750 1050 1750
+Wire Wire Line
+	1050 1650 1050 1750
 Wire Wire Line
 	1000 1350 1050 1350
+Wire Wire Line
+	1000 1450 1050 1450
+Wire Wire Line
+	1050 1350 1050 1450
+NoConn ~ 1050 1550
+Wire Wire Line
+	1050 1550 1000 1550
 $EndSCHEMATC
