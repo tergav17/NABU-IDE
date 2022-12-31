@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 862)
     (zones 0)
     (modules 18)
@@ -1580,6 +1580,9 @@
     )
   )
 
+  (gr_text "+\n" (at 193.04 81.788) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_line (start 259.207 141.097) (end 259.207 145.415) (layer Edge.Cuts) (width 0.05) (tstamp 638D86AE))
   (gr_line (start 178.435 141.097) (end 178.435 145.415) (layer Edge.Cuts) (width 0.05) (tstamp 638D86AD))
   (gr_text "NABU-IDE REV. 01\n2022, Gavin Tersteeg\n" (at 189.103 88.392) (layer F.SilkS)

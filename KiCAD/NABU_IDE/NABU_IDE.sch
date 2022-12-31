@@ -530,12 +530,12 @@ $EndComp
 $Comp
 L 74xx:74LS08 U3
 U 5 1 63AEC061
-P 2000 5350
-F 0 "U3" H 2230 5396 50  0000 L CNN
-F 1 "74LS08" H 2230 5305 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2000 5350 50  0001 C CNN
-	5    2000 5350
+P 6300 5950
+F 0 "U3" H 6530 5996 50  0000 L CNN
+F 1 "74LS08" H 6530 5905 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6300 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6300 5950 50  0001 C CNN
+	5    6300 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -580,12 +580,12 @@ $EndComp
 $Comp
 L 74xx:74LS04 U4
 U 7 1 63B3AA98
-P 1250 6500
-F 0 "U4" H 1480 6546 50  0000 L CNN
-F 1 "74LS04" H 1480 6455 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1250 6500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1250 6500 50  0001 C CNN
-	7    1250 6500
+P 7800 5950
+F 0 "U4" H 8030 5996 50  0000 L CNN
+F 1 "74LS04" H 8030 5905 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7800 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7800 5950 50  0001 C CNN
+	7    7800 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -683,22 +683,22 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3500 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 4850 1350 4850
+	5550 5450 5650 5450
 Wire Wire Line
-	1350 5850 1250 5850
-Text Label 1350 5850 0    50   ~ 0
+	5650 6450 5550 6450
+Text Label 5650 6450 0    50   ~ 0
 GND
-Text Label 1350 4850 0    50   ~ 0
+Text Label 5650 5450 0    50   ~ 0
 +5V
 $Comp
 L 74xx:74LS32 U2
 U 5 1 63A3E848
-P 1250 5350
-F 0 "U2" H 1480 5396 50  0000 L CNN
-F 1 "74LS32" H 1480 5305 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1250 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1250 5350 50  0001 C CNN
-	5    1250 5350
+P 5550 5950
+F 0 "U2" H 5780 5996 50  0000 L CNN
+F 1 "74LS32" H 5780 5905 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5550 5950 50  0001 C CNN
+	5    5550 5950
 	1    0    0    -1  
 $EndComp
 Text Label 4700 6650 0    50   ~ 0
@@ -751,7 +751,7 @@ L Device:R R1
 U 1 1 63D1FCC4
 P 4650 3100
 F 0 "R1" V 4443 3100 50  0000 C CNN
-F 1 "50Ω" V 4534 3100 50  0000 C CNN
+F 1 "50R" V 4534 3100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 3100 50  0001 C CNN
 F 3 "~" H 4650 3100 50  0001 C CNN
 	1    4650 3100
@@ -783,22 +783,22 @@ Text Label 5500 3100 0    50   ~ 0
 *IDE_RD
 Wire Wire Line
 	5450 3100 5500 3100
-Text Label 2050 4850 0    50   ~ 0
+Text Label 6350 5450 0    50   ~ 0
 +5V
 Wire Wire Line
-	2050 4850 2000 4850
-Text Label 1300 6000 0    50   ~ 0
+	6350 5450 6300 5450
+Text Label 7850 5450 0    50   ~ 0
 +5V
 Wire Wire Line
-	1300 6000 1250 6000
-Text Label 1300 7000 0    50   ~ 0
+	7850 5450 7800 5450
+Text Label 7850 6450 0    50   ~ 0
 GND
 Wire Wire Line
-	1300 7000 1250 7000
-Text Label 2050 5850 0    50   ~ 0
+	7850 6450 7800 6450
+Text Label 6350 6450 0    50   ~ 0
 GND
 Wire Wire Line
-	2050 5850 2000 5850
+	6350 6450 6300 6450
 Text Label 3850 6950 0    50   ~ 0
 ENDIAN
 $Comp
@@ -924,12 +924,12 @@ $EndComp
 $Comp
 L 74xx:74LS32 U5
 U 5 1 63FB49E2
-P 2000 6500
-F 0 "U5" H 2230 6546 50  0000 L CNN
-F 1 "74LS32" H 2230 6455 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 6500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2000 6500 50  0001 C CNN
-	5    2000 6500
+P 7050 5950
+F 0 "U5" H 7280 5996 50  0000 L CNN
+F 1 "74LS32" H 7280 5905 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7050 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 7050 5950 50  0001 C CNN
+	5    7050 5950
 	1    0    0    -1  
 $EndComp
 Text Label 3150 3650 2    50   ~ 0
@@ -1004,14 +1004,14 @@ Wire Wire Line
 	5450 5300 5450 4100
 Wire Wire Line
 	5450 4100 6850 4100
-Text Label 2050 6000 0    50   ~ 0
+Text Label 7100 5450 0    50   ~ 0
 +5V
 Wire Wire Line
-	2050 6000 2000 6000
-Text Label 2050 7000 0    50   ~ 0
+	7100 5450 7050 5450
+Text Label 7100 6450 0    50   ~ 0
 GND
 Wire Wire Line
-	2050 7000 2000 7000
+	7100 6450 7050 6450
 Wire Wire Line
 	4600 6650 4700 6650
 Text Label 5250 6750 2    50   ~ 0
@@ -1094,7 +1094,7 @@ L Device:R R2
 U 1 1 643C1CC6
 P 9900 4950
 F 0 "R2" V 9693 4950 50  0000 C CNN
-F 1 "180Ω" V 9784 4950 50  0000 C CNN
+F 1 "180R" V 9784 4950 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9830 4950 50  0001 C CNN
 F 3 "~" H 9900 4950 50  0001 C CNN
 	1    9900 4950
@@ -1162,43 +1162,36 @@ Connection ~ 10200 5250
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 644BB0A5
-P 850 6000
-F 0 "#FLG0101" H 850 6075 50  0001 C CNN
-F 1 "PWR_FLAG" H 850 6173 50  0000 C CNN
-F 2 "" H 850 6000 50  0001 C CNN
-F 3 "~" H 850 6000 50  0001 C CNN
-	1    850  6000
+P 7800 5450
+F 0 "#FLG0101" H 7800 5525 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 5623 50  0000 C CNN
+F 2 "" H 7800 5450 50  0001 C CNN
+F 3 "~" H 7800 5450 50  0001 C CNN
+	1    7800 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 6000 850  6000
-Connection ~ 1250 6000
 $Comp
 L power:GND #PWR0101
 U 1 1 644D3C58
-P 850 7000
-F 0 "#PWR0101" H 850 6750 50  0001 C CNN
-F 1 "GND" H 855 6827 50  0000 C CNN
-F 2 "" H 850 7000 50  0001 C CNN
-F 3 "" H 850 7000 50  0001 C CNN
-	1    850  7000
+P 8250 6300
+F 0 "#PWR0101" H 8250 6050 50  0001 C CNN
+F 1 "GND" H 8255 6127 50  0000 C CNN
+F 2 "" H 8250 6300 50  0001 C CNN
+F 3 "" H 8250 6300 50  0001 C CNN
+	1    8250 6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	850  7000 1250 7000
-Connection ~ 1250 7000
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 644EC4BB
-P 850 7000
-F 0 "#FLG0102" H 850 7075 50  0001 C CNN
-F 1 "PWR_FLAG" H 850 7173 50  0000 C CNN
-F 2 "" H 850 7000 50  0001 C CNN
-F 3 "~" H 850 7000 50  0001 C CNN
-	1    850  7000
+P 8250 6300
+F 0 "#FLG0102" H 8250 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 8250 6473 50  0000 C CNN
+F 2 "" H 8250 6300 50  0001 C CNN
+F 3 "~" H 8250 6300 50  0001 C CNN
+	1    8250 6300
 	1    0    0    -1  
 $EndComp
-Connection ~ 850  7000
 $Comp
 L Device:Jumper JP2
 U 1 1 6451DCB2
@@ -1236,4 +1229,269 @@ Text Label 10350 4950 0    50   ~ 0
 Wire Wire Line
 	10200 4950 10350 4950
 Connection ~ 10200 4950
+$Comp
+L Connector:Conn_01x30_Female J3
+U 1 1 63B245B7
+P 1700 5950
+F 0 "J3" H 1592 7535 50  0000 C CNN
+F 1 "NABU Daisy Chain In" H 1592 7444 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Horizontal" H 1700 5950 50  0001 C CNN
+F 3 "~" H 1700 5950 50  0001 C CNN
+	1    1700 5950
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7800 5450
+Wire Wire Line
+	7800 6450 7800 6500
+Wire Wire Line
+	7800 6500 8100 6500
+Wire Wire Line
+	8100 6500 8100 6300
+Wire Wire Line
+	8100 6300 8250 6300
+Connection ~ 7800 6450
+Connection ~ 8250 6300
+Text Label 1950 6750 0    50   ~ 0
+*NABU_INT
+Text Label 1950 7150 0    50   ~ 0
+*NABU_CS
+Text Label 1950 5050 0    50   ~ 0
+NABU_A0
+Text Label 1950 5150 0    50   ~ 0
+NABU_A1
+Text Label 1950 5250 0    50   ~ 0
+NABU_A2
+Text Label 1950 5350 0    50   ~ 0
+NABU_A3
+Wire Wire Line
+	1950 5350 1900 5350
+Wire Wire Line
+	1900 5250 1950 5250
+Wire Wire Line
+	1950 5150 1900 5150
+Wire Wire Line
+	1900 5050 1950 5050
+Text Label 1950 5550 0    50   ~ 0
+*NABU_RD
+Text Label 1950 5650 0    50   ~ 0
+*NABU_WR
+Wire Wire Line
+	1950 5550 1900 5550
+Wire Wire Line
+	1900 5650 1950 5650
+Text Label 1950 5750 0    50   ~ 0
+*NABU_IORQ
+Wire Wire Line
+	1950 5750 1900 5750
+Text Label 1950 5950 0    50   ~ 0
+NABU_D0
+Text Label 1950 6050 0    50   ~ 0
+NABU_D1
+Text Label 1950 6150 0    50   ~ 0
+NABU_D2
+Text Label 1950 6250 0    50   ~ 0
+NABU_D3
+Text Label 1950 6350 0    50   ~ 0
+NABU_D4
+Text Label 1950 6450 0    50   ~ 0
+NABU_D5
+Text Label 1950 6550 0    50   ~ 0
+NABU_D6
+Text Label 1950 6650 0    50   ~ 0
+NABU_D7
+Wire Wire Line
+	1900 5950 1950 5950
+Wire Wire Line
+	1950 6050 1900 6050
+Wire Wire Line
+	1900 6150 1950 6150
+Wire Wire Line
+	1950 6250 1900 6250
+Wire Wire Line
+	1900 6350 1950 6350
+Wire Wire Line
+	1950 6450 1900 6450
+Wire Wire Line
+	1900 6550 1950 6550
+Wire Wire Line
+	1950 6650 1900 6650
+Wire Wire Line
+	1950 6750 1900 6750
+Wire Wire Line
+	1900 7150 1950 7150
+NoConn ~ 1950 4550
+Text Label 1950 4650 0    50   ~ 0
+CHAIN_INTAK
+Text Label 1950 4750 0    50   ~ 0
+CHAIN_3.58Mhz
+Text Label 1950 4950 0    50   ~ 0
+CHAIN_AUDIO
+Wire Wire Line
+	1950 4950 1900 4950
+Wire Wire Line
+	1900 4750 1950 4750
+Wire Wire Line
+	1950 4650 1900 4650
+NoConn ~ 1950 4850
+Wire Wire Line
+	1950 4850 1900 4850
+NoConn ~ 1950 5450
+Wire Wire Line
+	1950 5450 1900 5450
+Text Label 1950 5850 0    50   ~ 0
+CHAIN_WAIT
+Wire Wire Line
+	1950 5850 1900 5850
+Text Label 1950 6850 0    50   ~ 0
+CHAIN_INT0
+Text Label 1950 6950 0    50   ~ 0
+CHAIN_INT1
+Wire Wire Line
+	1950 6950 1900 6950
+Wire Wire Line
+	1900 6850 1950 6850
+Text Label 1950 7050 0    50   ~ 0
+CHAIN_INT2
+Wire Wire Line
+	1950 7050 1900 7050
+Text Label 1950 7250 0    50   ~ 0
+CHAIN_CS0
+Wire Wire Line
+	1950 7250 1900 7250
+Text Label 1950 7350 0    50   ~ 0
+CHAIN_CS1
+Wire Wire Line
+	1950 7350 1900 7350
+Text Label 1950 7450 0    50   ~ 0
+CHAIN_CS2
+Wire Wire Line
+	1950 7450 1900 7450
+$Comp
+L Connector:Conn_01x30_Female J4
+U 1 1 63FFF128
+P 850 5950
+F 0 "J4" H 742 7535 50  0000 C CNN
+F 1 "NABU Daisy Chain Out" H 742 7444 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Horizontal" H 850 5950 50  0001 C CNN
+F 3 "~" H 850 5950 50  0001 C CNN
+	1    850  5950
+	-1   0    0    -1  
+$EndComp
+Text Label 1100 5050 0    50   ~ 0
+NABU_A0
+Text Label 1100 5150 0    50   ~ 0
+NABU_A1
+Text Label 1100 5250 0    50   ~ 0
+NABU_A2
+Text Label 1100 5350 0    50   ~ 0
+NABU_A3
+Wire Wire Line
+	1100 5350 1050 5350
+Wire Wire Line
+	1050 5250 1100 5250
+Wire Wire Line
+	1100 5150 1050 5150
+Wire Wire Line
+	1050 5050 1100 5050
+Text Label 1100 5550 0    50   ~ 0
+*NABU_RD
+Text Label 1100 5650 0    50   ~ 0
+*NABU_WR
+Wire Wire Line
+	1100 5550 1050 5550
+Wire Wire Line
+	1050 5650 1100 5650
+Text Label 1100 5750 0    50   ~ 0
+*NABU_IORQ
+Wire Wire Line
+	1100 5750 1050 5750
+Text Label 1100 5950 0    50   ~ 0
+NABU_D0
+Text Label 1100 6050 0    50   ~ 0
+NABU_D1
+Text Label 1100 6150 0    50   ~ 0
+NABU_D2
+Text Label 1100 6250 0    50   ~ 0
+NABU_D3
+Text Label 1100 6350 0    50   ~ 0
+NABU_D4
+Text Label 1100 6450 0    50   ~ 0
+NABU_D5
+Text Label 1100 6550 0    50   ~ 0
+NABU_D6
+Text Label 1100 6650 0    50   ~ 0
+NABU_D7
+Wire Wire Line
+	1050 5950 1100 5950
+Wire Wire Line
+	1100 6050 1050 6050
+Wire Wire Line
+	1050 6150 1100 6150
+Wire Wire Line
+	1100 6250 1050 6250
+Wire Wire Line
+	1050 6350 1100 6350
+Wire Wire Line
+	1100 6450 1050 6450
+Wire Wire Line
+	1050 6550 1100 6550
+Wire Wire Line
+	1100 6650 1050 6650
+NoConn ~ 1100 4550
+Text Label 1100 4650 0    50   ~ 0
+CHAIN_INTAK
+Text Label 1100 4750 0    50   ~ 0
+CHAIN_3.58Mhz
+Text Label 1100 4950 0    50   ~ 0
+CHAIN_AUDIO
+Wire Wire Line
+	1100 4950 1050 4950
+Wire Wire Line
+	1050 4750 1100 4750
+Wire Wire Line
+	1100 4650 1050 4650
+NoConn ~ 1100 4850
+Wire Wire Line
+	1100 4850 1050 4850
+NoConn ~ 1100 5450
+Wire Wire Line
+	1100 5450 1050 5450
+Text Label 1100 5850 0    50   ~ 0
+CHAIN_WAIT
+Wire Wire Line
+	1100 5850 1050 5850
+Wire Wire Line
+	1950 4550 1900 4550
+Wire Wire Line
+	1100 4550 1050 4550
+Text Label 1100 6750 0    50   ~ 0
+CHAIN_INT0
+Text Label 1100 6850 0    50   ~ 0
+CHAIN_INT1
+Wire Wire Line
+	1100 6850 1050 6850
+Wire Wire Line
+	1050 6750 1100 6750
+Text Label 1100 6950 0    50   ~ 0
+CHAIN_INT2
+Wire Wire Line
+	1100 6950 1050 6950
+Text Label 1100 7150 0    50   ~ 0
+CHAIN_CS0
+Wire Wire Line
+	1100 7150 1050 7150
+Text Label 1100 7250 0    50   ~ 0
+CHAIN_CS1
+Wire Wire Line
+	1100 7250 1050 7250
+Text Label 1100 7350 0    50   ~ 0
+CHAIN_CS2
+Wire Wire Line
+	1100 7350 1050 7350
+NoConn ~ 1100 7050
+NoConn ~ 1100 7450
+Wire Wire Line
+	1100 7450 1050 7450
+Wire Wire Line
+	1100 7050 1050 7050
 $EndSCHEMATC
