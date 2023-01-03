@@ -1671,7 +1671,7 @@ U 1 1 63DDBB25
 P 9800 4950
 F 0 "U8" H 9800 5931 50  0000 C CNN
 F 1 "74LS245" H 9800 5840 50  0000 C CNN
-F 2 "" H 9800 4950 50  0001 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 9800 4950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 9800 4950 50  0001 C CNN
 	1    9800 4950
 	1    0    0    -1  
@@ -1730,8 +1730,6 @@ Wire Wire Line
 Connection ~ 3850 1450
 Wire Wire Line
 	3850 1450 4000 1450
-Text Label 8400 4500 2    50   ~ 0
-*NABU_SEL
 Wire Wire Line
 	9250 6400 9200 6400
 Text Label 9800 6000 0    50   ~ 0
