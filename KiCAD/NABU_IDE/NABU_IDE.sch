@@ -1071,8 +1071,8 @@ $Comp
 L Device:Jumper JP2
 U 1 1 6451DCB2
 P 7300 5200
-F 0 "JP2" H 7300 5464 50  0000 C CNN
-F 1 "Internal LED" H 7300 5373 50  0000 C CNN
+F 0 "JP2" H 7300 5050 50  0000 C CNN
+F 1 "Internal LED" H 7300 5100 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7300 5200 50  0001 C CNN
 F 3 "~" H 7300 5200 50  0001 C CNN
 	1    7300 5200
@@ -1082,8 +1082,8 @@ $Comp
 L Device:Jumper JP1
 U 1 1 6452A764
 P 7300 4800
-F 0 "JP1" H 7300 5064 50  0000 C CNN
-F 1 "External LED" H 7300 4973 50  0000 C CNN
+F 0 "JP1" H 7300 4650 50  0000 C CNN
+F 1 "External LED" H 7300 4700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7300 4800 50  0001 C CNN
 F 3 "~" H 7300 4800 50  0001 C CNN
 	1    7300 4800
@@ -1098,7 +1098,6 @@ Wire Wire Line
 Connection ~ 8050 5200
 Wire Wire Line
 	6950 5200 7000 5200
-Connection ~ 7000 5200
 Text Label 8650 5200 0    50   ~ 0
 +5V
 Wire Wire Line
@@ -1646,17 +1645,6 @@ Wire Wire Line
 NoConn ~ 1050 1550
 Wire Wire Line
 	1050 1550 1000 1550
-$Comp
-L Device:C C9
-U 1 1 63B39543
-P 1000 2500
-F 0 "C9" V 748 2500 50  0000 C CNN
-F 1 "100uf" V 839 2500 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1038 2350 50  0001 C CNN
-F 3 "~" H 1000 2500 50  0001 C CNN
-	1    1000 2500
-	0    1    1    0   
-$EndComp
 Text Label 800  2500 2    50   ~ 0
 +5V
 Text Label 1200 2500 0    50   ~ 0
@@ -1807,4 +1795,38 @@ Text Label 10350 5150 0    50   ~ 0
 *NABU_SEL
 Wire Wire Line
 	10350 5150 10300 5150
+$Comp
+L Device:CP C9
+U 1 1 6466E824
+P 1000 2500
+F 0 "C9" V 1255 2500 50  0000 C CNN
+F 1 "100uf" V 1164 2500 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1038 2350 50  0001 C CNN
+F 3 "~" H 1000 2500 50  0001 C CNN
+	1    1000 2500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7000 5200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6482CFF7
+P 5150 7350
+F 0 "H1" H 5250 7396 50  0000 L CNN
+F 1 "MountingHole" H 5250 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5150 7350 50  0001 C CNN
+F 3 "~" H 5150 7350 50  0001 C CNN
+	1    5150 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6482F3C6
+P 5150 7550
+F 0 "H2" H 5250 7596 50  0000 L CNN
+F 1 "MountingHole" H 5250 7505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5150 7550 50  0001 C CNN
+F 3 "~" H 5150 7550 50  0001 C CNN
+	1    5150 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
