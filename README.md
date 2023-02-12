@@ -26,7 +26,7 @@ The next 4 registers map to the last remaining ATA registers. With these registe
 | --------------- | ----------------- |
 | 0x0C            | Device |
 | 0x0D            | Alt Status / Device Control |
-| 0x0E            | Command |
+| 0x0E            | Status / Command |
 | 0x0F            | Undefined |
 
 This should be all one would need to make use of an ATA IDE device. For those who want further reading, I will drop a link to a good document below:
