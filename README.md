@@ -33,30 +33,28 @@ This should be all one would need to make use of an ATA IDE device. For those wh
 
 http://users.utcluj.ro/~baruch/media/siee/labor/ATA-Interface.pdf
 
-Now go port CP/M or something idk
-
 ## BOM
 Here is the BOM to build the initial version of the board. I am not sure is 74HCXX logic where work in this case, as there are some timing dependent logic here. Also, components like the Molex power header are not required if just want to run it directly off of the NABU expansion header.
 
-| Quantity | Component | Footprint | Comments |
-| -------- | --------- | --------- | -------- |
-| 2        | 74LS574   | DIP-20    | |
-| 2        | 74LS245   | DIP-20    | |
-| 2        | 74LS32    | DIP-14    | |
-| 1        | 74LS08    | DIP-14    | |
-| 1        | 74LS04    | DIP-14    | |
-| 8        | 100nf Capacitor | Disc 5x2.5x5mm | |
-| 1        | 1nf Capacitor | Disc 5x2.5x5mm | |
-| 1        | 100uf Capacitor | Radial  5x2mm | |
-| 4        | 10K Resistor | Axial 6.3x2.5x7.62mm | |
-| 2        | 3.3K Resistor | Axial 6.3x2.5x7.62mm | |
-| 1        | 180R Resistor | Axial 6.3x2.5x7.62mm | |
-| 1        | 50R Resistor | Axial 6.3x2.5x7.62mm | |
-| 1        | LED          | 3mm | |
-| 2        | 1x2 Pin Header | 2.54mm | Will need associated jumpers for configuration |
-| 2        | 1x30 Vertical Pin Header | 2.54mm | Needed for daisy chain |
-| 1        | Molex KK-396 1x5 Vertical | 3.96mm | Needed for daisy chain |
-| 1        | 1x30 Horizontal Pin Header | 2.54mm | Needed for direct-to-expansion |
-| 1        | 2x20 IDC Header Horizontal | 2.54mm | |
+| Quantity | Component | Footprint | Designator | Comments | 
+| -------- | --------- | --------- | ---------- | -------- |
+| 2        | 74LS574   | DIP-20    | U6, U7 | |
+| 2        | 74LS245   | DIP-20    | U1, U8 |  |
+| 2        | 74LS32    | DIP-14    | U2, U5 | |
+| 1        | 74LS08    | DIP-14    | U3 | |
+| 1        | 74LS04    | DIP-14    | U4 | |
+| 8        | 100nf Capacitor | Disc 5x2.5x5mm | C2, C3, C4, C5, C6, C7, C8, C10 | |
+| 1        | 1nf Capacitor | Disc 5x2.5x5mm | C1 | |
+| 1        | 100uf Capacitor | Radial  5x2mm | C9 | |
+| 4        | 10K Resistor | Axial 6.3x2.5x7.62mm | R3, R6, R7, R8 | |
+| 2        | 3.3K Resistor | Axial 6.3x2.5x7.62mm | R4, R5 | |
+| 1        | 180R Resistor | Axial 6.3x2.5x7.62mm | R2 | |
+| 1        | 50R Resistor | Axial 6.3x2.5x7.62mm | R1 | |
+| 1        | LED          | 3mm | D1 | | 
+| 2        | 1x2 Pin Header | 2.54mm | JP1, JP2 | Will need associated jumpers for configuration |
+| 2        | 1x30 Vertical Pin Header | 2.54mm | J3, J4 | Needed for daisy chain |
+| 1        | Molex KK-396 1x5 Vertical | 3.96mm | J5 | Needed for daisy chain |
+| 1        | 1x30 Horizontal Pin Header | 2.54mm | J2 | Needed for direct-to-expansion |
+| 1        | 2x20 IDC Header Horizontal | 2.54mm | J1 | |
 
 A proper KiCAD generated .csv BOM can be found in the KiCAD directory of this repo.
