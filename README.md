@@ -36,6 +36,16 @@ http://users.utcluj.ro/~baruch/media/siee/labor/ATA-Interface.pdf
 ## BOM
 Here is the BOM to build the initial version of the board. I am not sure is 74HCXX logic where work in this case, as there are some timing dependent logic here. Also, components like the Molex power header are not required if just want to run it directly off of the NABU expansion header.
 
+WARNING: If you are building the board (especially Rev 02) to be used on the daisy chain, special attention needs to be paid to the power connector. The design was originally supposed to use the same cable as the FDC, but there is a mistake which connects both pin 4 and pin 5 to +5V. Pin 5 should either be removed from the connector, or not be connected on the cable. 
+
+| Pin Number | Voltage Level |
+| ---------- | ------------- |
+| 1          | GND           |
+| 2          | GND           |
+| 3          | N/C           |
+| 4          | +5V           |
+| 5          | +5V           |
+
 | Quantity | Component | Footprint | Designator | Comments | 
 | -------- | --------- | --------- | ---------- | -------- |
 | 2        | 74LS574   | DIP-20    | U6, U7 | |
