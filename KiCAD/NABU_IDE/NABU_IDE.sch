@@ -79,7 +79,6 @@ Text Label 10100 1950 0    50   ~ 0
 IDE_D14
 Text Label 10100 2050 0    50   ~ 0
 IDE_D15
-NoConn ~ 10100 2150
 Text Label 10100 2250 0    50   ~ 0
 GND
 Text Label 10100 2350 0    50   ~ 0
@@ -1071,7 +1070,7 @@ $Comp
 L Device:Jumper JP2
 U 1 1 6451DCB2
 P 7300 5200
-F 0 "JP2" H 7300 5050 50  0000 C CNN
+F 0 "JP2" H 7300 5000 50  0000 C CNN
 F 1 "Internal LED" H 7300 5100 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7300 5200 50  0001 C CNN
 F 3 "~" H 7300 5200 50  0001 C CNN
@@ -1082,7 +1081,7 @@ $Comp
 L Device:Jumper JP1
 U 1 1 6452A764
 P 7300 4800
-F 0 "JP1" H 7300 4650 50  0000 C CNN
+F 0 "JP1" H 7300 4600 50  0000 C CNN
 F 1 "External LED" H 7300 4700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7300 4800 50  0001 C CNN
 F 3 "~" H 7300 4800 50  0001 C CNN
@@ -1628,23 +1627,16 @@ F 3 "~" H 800 1550 50  0001 C CNN
 $EndComp
 Text Label 1050 1400 0    50   ~ 0
 GND
-Text Label 1050 1700 0    50   ~ 0
-+5V
 Wire Wire Line
 	1000 1650 1050 1650
 Wire Wire Line
 	1000 1750 1050 1750
-Wire Wire Line
-	1050 1650 1050 1750
 Wire Wire Line
 	1000 1350 1050 1350
 Wire Wire Line
 	1000 1450 1050 1450
 Wire Wire Line
 	1050 1350 1050 1450
-NoConn ~ 1050 1550
-Wire Wire Line
-	1050 1550 1000 1550
 Text Label 800  2500 2    50   ~ 0
 +5V
 Text Label 1200 2500 0    50   ~ 0
@@ -1810,23 +1802,50 @@ Connection ~ 7000 5200
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 6482CFF7
-P 5150 7350
-F 0 "H1" H 5250 7396 50  0000 L CNN
-F 1 "MountingHole" H 5250 7305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 5150 7350 50  0001 C CNN
-F 3 "~" H 5150 7350 50  0001 C CNN
-	1    5150 7350
+P 4250 7400
+F 0 "H1" H 4350 7446 50  0000 L CNN
+F 1 "MountingHole" H 4350 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4250 7400 50  0001 C CNN
+F 3 "~" H 4250 7400 50  0001 C CNN
+	1    4250 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6482F3C6
-P 5150 7550
-F 0 "H2" H 5250 7596 50  0000 L CNN
-F 1 "MountingHole" H 5250 7505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 5150 7550 50  0001 C CNN
-F 3 "~" H 5150 7550 50  0001 C CNN
-	1    5150 7550
+P 4250 7600
+F 0 "H2" H 4350 7646 50  0000 L CNN
+F 1 "MountingHole" H 4350 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 4250 7600 50  0001 C CNN
+F 3 "~" H 4250 7600 50  0001 C CNN
+	1    4250 7600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper JP3
+U 1 1 64E0785B
+P 5800 7500
+F 0 "JP3" H 5800 7300 50  0000 C CNN
+F 1 "CF Power Option" H 5800 7400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 7500 50  0001 C CNN
+F 3 "~" H 5800 7500 50  0001 C CNN
+	1    5800 7500
+	1    0    0    -1  
+$EndComp
+Text Label 10100 2150 0    50   ~ 0
+IDE_CFPOWER
+Text Label 5450 7500 2    50   ~ 0
+IDE_CFPOWER
+Wire Wire Line
+	6150 7500 6100 7500
+Text Label 6150 7500 0    50   ~ 0
++5V
+Wire Wire Line
+	5450 7500 5500 7500
+NoConn ~ 1050 1550
+Wire Wire Line
+	1050 1550 1000 1550
+NoConn ~ 1050 1750
+Text Label 1050 1650 0    50   ~ 0
++5V
 $EndSCHEMATC
