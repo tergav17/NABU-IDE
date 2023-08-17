@@ -61,7 +61,7 @@ WARNING: If you are building the board (especially Rev 02) to be used on the dai
 | 1        | 180R Resistor | Axial 6.3x2.5x7.62mm | R2 | |
 | 1        | 50R Resistor | Axial 6.3x2.5x7.62mm | R1 | |
 | 1        | LED          | 3mm | D1 | | 
-| 2        | 1x2 Pin Header | 2.54mm | JP1, JP2 | Will need associated jumpers for configuration |
+| 3        | 1x2 Pin Header | 2.54mm | JP1, JP2, JP3 | Will need associated jumpers for configuration |
 | 2        | 1x30 Vertical Pin Header | 2.54mm | J3, J4 | Needed for daisy chain |
 | 1        | Molex KK-396 1x5 Vertical | 3.96mm | J5 | Needed for daisy chain |
 | 1        | 1x30 Horizontal Pin Header | 2.54mm | J2 | Needed for direct-to-expansion |
